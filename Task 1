@@ -1,0 +1,14 @@
+def student():
+    return {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 95,
+    "Eve": 88
+    }
+
+input_name = input("Enter the student's name: ")
+if input_name in student():
+    print(f"{input_name}'s marks: {student()[input_name]}")
+else:
+    print(f"Student '{input_name}' not found in the dictionary.")
